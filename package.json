@@ -1,0 +1,18 @@
+{
+  "name": "play-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cucumber": "node ./node_modules/@cucumber/cucumber/bin/cucumber-js ./*/feature/**/*.feature --require ./*/steps/**/*.ts --require ./*/hooks/hooks.ts --format json:./reports/cucumber_report.json --require-module ts-node/register"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.2",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.12.2",
+    "ts-node": "^10.9.2"
+  }
+}
